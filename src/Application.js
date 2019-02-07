@@ -10,6 +10,10 @@ class Application extends Component {
     grudges: [],
   };
 
+  componentDidMount() {
+    console.log('I AM ALIVE!');
+  }
+
   addGrudge = grudge => {
     this.setState({ grudges: [grudge, ...this.state.grudges] });
   };
